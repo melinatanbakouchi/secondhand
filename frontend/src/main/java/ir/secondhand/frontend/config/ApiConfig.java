@@ -6,8 +6,8 @@ package ir.secondhand.frontend.config;
  */
 public final class ApiConfig {
 
-    public static final String BASE_URL = "http://localhost:8080/api";
-    public static final String FILES_BASE_URL = "http://localhost:8080";
+    public static final String BASE_URL = "http://localhost:8083/api";
+    public static final String FILES_BASE_URL = "http://localhost:8083";
 
     private ApiConfig() {
     }

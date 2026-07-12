@@ -197,12 +197,13 @@ public class AdDetailController {
     }
 
     private void renderBuyerActions() {
-        boolean isFavorite;
+        boolean favorite = false;
         try {
-            isFavorite = favoriteService.isFavorite(currentAd.getId());
+            favorite = favoriteService.isFavorite(currentAd.getId());
         } catch (ApiException ex) {
-            isFavorite = false;
+            // keep false when status cannot be loaded
         }
+        final boolean isFavorite = favorite;
 
         Button favoriteButton = new Button(isFavorite ? "حذف از علاقه‌مندی‌ها" : "افزودن به علاقه‌مندی‌ها");
         favoriteButton.getStyleClass().add(isFavorite ? "btn-danger" : "btn-secondary");
