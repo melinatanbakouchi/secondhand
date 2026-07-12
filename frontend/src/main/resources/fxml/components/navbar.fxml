@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+
+<HBox styleClass="navbar" alignment="CENTER_LEFT" spacing="8"
+      xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="ir.secondhand.frontend.controller.component.NavBarController">
+    <Label styleClass="navbar-title" text="بازار دست دوم" onMouseClicked="#onHome"/>
+    <Region HBox.hgrow="ALWAYS"/>
+    <Button fx:id="homeButton" styleClass="nav-button" text="خانه" onAction="#onHome"/>
+    <Button fx:id="createAdButton" styleClass="nav-button" text="ثبت آگهی" onAction="#onCreateAd"/>
+    <Button fx:id="myAdsButton" styleClass="nav-button" text="آگهی‌های من" onAction="#onMyAds"/>
+    <Button fx:id="favoritesButton" styleClass="nav-button" text="علاقه‌مندی‌ها" onAction="#onFavorites"/>
+    <Button fx:id="conversationsButton" styleClass="nav-button" text="گفت‌وگوها" onAction="#onConversations"/>
+    <Button fx:id="adminButton" styleClass="nav-button" text="پنل مدیریت" onAction="#onAdmin"/>
+    <Region HBox.hgrow="ALWAYS"/>
+    <Label fx:id="welcomeLabel" styleClass="card-meta"/>
+    <Button fx:id="loginButton" styleClass="btn-secondary" text="ورود" onAction="#onLogin"/>
+    <Button fx:id="logoutButton" styleClass="btn-danger" text="خروج" onAction="#onLogout"/>
+</HBox>

@@ -1,0 +1,31 @@
+# Maven
+target/
+**/target/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Backend runtime data
+backend/uploads/
+!backend/uploads/.gitkeep
+
+# Environment
+.env
+
+# JavaFX / Frontend build output
+frontend/target/
+
+# Compiled class files
+*.class

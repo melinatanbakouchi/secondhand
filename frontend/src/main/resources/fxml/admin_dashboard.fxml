@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ir.secondhand.frontend.controller.AdminDashboardController" styleClass="page-background">
+    <top>
+        <fx:include fx:id="navbar" source="components/navbar.fxml"/>
+    </top>
+    <center>
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <Tab text="آمار کلی">
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+                    <FlowPane fx:id="statsContainer" hgap="16" vgap="16">
+                        <padding>
+                            <Insets top="20" right="24" bottom="24" left="24"/>
+                        </padding>
+                    </FlowPane>
+                </ScrollPane>
+            </Tab>
+            <Tab text="آگهی‌های در انتظار بررسی">
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+                    <VBox fx:id="pendingContainer" spacing="10">
+                        <padding>
+                            <Insets top="20" right="24" bottom="24" left="24"/>
+                        </padding>
+                    </VBox>
+                </ScrollPane>
+            </Tab>
+            <Tab text="کاربران">
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+                    <VBox fx:id="usersContainer" spacing="10">
+                        <padding>
+                            <Insets top="20" right="24" bottom="24" left="24"/>
+                        </padding>
+                    </VBox>
+                </ScrollPane>
+            </Tab>
+            <Tab text="دسته‌بندی‌ها">
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+                    <VBox fx:id="categoriesContainer" spacing="10">
+                        <padding>
+                            <Insets top="20" right="24" bottom="24" left="24"/>
+                        </padding>
+                    </VBox>
+                </ScrollPane>
+            </Tab>
+            <Tab text="شهرها">
+                <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+                    <VBox fx:id="citiesContainer" spacing="10">
+                        <padding>
+                            <Insets top="20" right="24" bottom="24" left="24"/>
+                        </padding>
+                    </VBox>
+                </ScrollPane>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>

@@ -1,0 +1,242 @@
+/* تم بصری الهام‌گرفته از دیوار: پس‌زمینه سفید، دکمه‌های سبز، کارت‌های گردگوشه */
+
+.root {
+    -fx-font-family: "Segoe UI", "Tahoma", sans-serif;
+    -fx-background-color: #f5f6f7;
+    -fx-font-size: 13px;
+}
+
+/* ---------- نوار بالایی ---------- */
+.navbar {
+    -fx-background-color: white;
+    -fx-padding: 14 24 14 24;
+    -fx-spacing: 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 6, 0, 0, 1);
+}
+
+.navbar-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00a862;
+}
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+    -fx-font-size: 13px;
+    -fx-cursor: hand;
+    -fx-padding: 8 14 8 14;
+    -fx-background-radius: 6;
+}
+
+.nav-button:hover {
+    -fx-background-color: #eef7f1;
+    -fx-text-fill: #00a862;
+}
+
+.nav-button-active {
+    -fx-background-color: #e5f6ee;
+    -fx-text-fill: #00a862;
+    -fx-font-weight: bold;
+}
+
+/* ---------- دکمه‌های اصلی ---------- */
+.btn-primary {
+    -fx-background-color: #00a862;
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 22 10 22;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.btn-primary:hover {
+    -fx-background-color: #018a51;
+}
+
+.btn-secondary {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #333333;
+    -fx-border-color: #d5d8dc;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 10 22 10 22;
+    -fx-cursor: hand;
+}
+
+.btn-secondary:hover {
+    -fx-border-color: #00a862;
+    -fx-text-fill: #00a862;
+}
+
+.btn-danger {
+    -fx-background-color: #fdeeee;
+    -fx-text-fill: #d64545;
+    -fx-padding: 8 16 8 16;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+}
+
+.btn-danger:hover {
+    -fx-background-color: #f8d7d7;
+}
+
+.btn-link {
+    -fx-background-color: transparent;
+    -fx-text-fill: #00a862;
+    -fx-cursor: hand;
+    -fx-underline: false;
+}
+
+.btn-link:hover {
+    -fx-underline: true;
+}
+
+/* ---------- کارت‌ها ---------- */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 2);
+    -fx-cursor: hand;
+}
+
+.card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.16), 10, 0, 0, 3);
+}
+
+.card-title {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222222;
+}
+
+.card-price {
+    -fx-font-size: 15px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00a862;
+}
+
+.card-meta {
+    -fx-font-size: 11px;
+    -fx-text-fill: #888888;
+}
+
+.card-image-placeholder {
+    -fx-background-color: #eef0f2;
+    -fx-background-radius: 10 10 0 0;
+}
+
+/* ---------- برچسب وضعیت ---------- */
+.status-badge {
+    -fx-padding: 3 10 3 10;
+    -fx-background-radius: 12;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+}
+
+.status-active { -fx-background-color: #e5f6ee; -fx-text-fill: #00a862; }
+.status-pending { -fx-background-color: #fff6e0; -fx-text-fill: #b8860b; }
+.status-rejected { -fx-background-color: #fdeeee; -fx-text-fill: #d64545; }
+.status-sold { -fx-background-color: #eef0f2; -fx-text-fill: #666666; }
+.status-deleted { -fx-background-color: #eef0f2; -fx-text-fill: #999999; }
+
+/* ---------- فرم‌ها ---------- */
+.form-title {
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222222;
+}
+
+.form-container {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-padding: 32;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 10, 0, 0, 2);
+}
+
+.text-field, .text-area, .combo-box, .password-field {
+    -fx-background-color: #f7f8f9;
+    -fx-background-radius: 8;
+    -fx-border-color: #e2e5e8;
+    -fx-border-radius: 8;
+    -fx-padding: 8;
+}
+
+.text-field:focused, .text-area:focused, .combo-box:focused, .password-field:focused {
+    -fx-border-color: #00a862;
+}
+
+.field-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #555555;
+    -fx-font-weight: bold;
+}
+
+.error-label {
+    -fx-text-fill: #d64545;
+    -fx-font-size: 12px;
+}
+
+.section-title {
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #222222;
+}
+
+.page-background {
+    -fx-background-color: #f5f6f7;
+}
+
+.search-bar {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.06), 6, 0, 0, 1);
+}
+
+.chat-bubble-mine {
+    -fx-background-color: #00a862;
+    -fx-text-fill: white;
+    -fx-background-radius: 14;
+    -fx-padding: 10 14 10 14;
+}
+
+.chat-bubble-other {
+    -fx-background-color: white;
+    -fx-text-fill: #222222;
+    -fx-background-radius: 14;
+    -fx-padding: 10 14 10 14;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 4, 0, 0, 1);
+}
+
+.list-row:hover {
+    -fx-background-color: #f7f8f9;
+}
+
+.empty-state {
+    -fx-text-fill: #999999;
+    -fx-font-size: 14px;
+}
+
+.stat-card {
+    -fx-background-color: white;
+    -fx-background-radius: 10;
+    -fx-padding: 20;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 6, 0, 0, 1);
+}
+
+.stat-value {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00a862;
+}
+
+.stat-label {
+    -fx-font-size: 12px;
+    -fx-text-fill: #777777;
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: white;
+}

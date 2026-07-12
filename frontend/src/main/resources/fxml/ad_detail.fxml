@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="ir.secondhand.frontend.controller.AdDetailController" styleClass="page-background">
+    <top>
+        <fx:include fx:id="navbar" source="components/navbar.fxml"/>
+    </top>
+    <center>
+        <ScrollPane fitToWidth="true" style="-fx-background-color: transparent;">
+            <VBox spacing="18" maxWidth="900">
+                <padding>
+                    <Insets top="24" right="24" bottom="32" left="24"/>
+                </padding>
+
+                <HBox spacing="24">
+                    <StackPane fx:id="imagePane" styleClass="card-image-placeholder" prefWidth="380" prefHeight="280" maxWidth="380" maxHeight="280"/>
+                    <VBox spacing="10" HBox.hgrow="ALWAYS">
+                        <HBox spacing="10" alignment="CENTER_LEFT">
+                            <Label fx:id="titleLabel" styleClass="form-title" wrapText="true"/>
+                        </HBox>
+                        <HBox fx:id="statusBox" spacing="8" alignment="CENTER_LEFT"/>
+                        <Label fx:id="priceLabel" styleClass="card-price" style="-fx-font-size: 22px;"/>
+                        <Label fx:id="metaLabel" styleClass="card-meta"/>
+                        <Label fx:id="dateLabel" styleClass="card-meta"/>
+                        <Separator/>
+                        <Label text="فروشنده" styleClass="field-label"/>
+                        <Label fx:id="ownerLabel" styleClass="card-meta"/>
+                        <Label fx:id="ownerRatingLabel" styleClass="card-meta"/>
+                    </VBox>
+                </HBox>
+
+                <FlowPane fx:id="actionsBox" hgap="10" vgap="10"/>
+
+                <Separator/>
+                <Label text="توضیحات آگهی" styleClass="section-title"/>
+                <Label fx:id="descriptionLabel" wrapText="true"/>
+
+                <VBox fx:id="managementBox" spacing="10" managed="false" visible="false">
+                    <Separator/>
+                    <Label text="مدیریت تصاویر آگهی" styleClass="section-title"/>
+                    <FlowPane fx:id="imagesManagementBox" hgap="10" vgap="10"/>
+                </VBox>
+            </VBox>
+        </ScrollPane>
+    </center>
+</BorderPane>
