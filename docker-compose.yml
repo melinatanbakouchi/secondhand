@@ -33,7 +33,7 @@ services:
       SPRING_DATASOURCE_USERNAME: secondhand_user
       SPRING_DATASOURCE_PASSWORD: secondhand_password
     ports:
-      - "8080:8080"
+      - "8083:8083"
     volumes:
       - backend-uploads:/app/uploads
 
